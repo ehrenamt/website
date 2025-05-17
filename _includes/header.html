@@ -1,0 +1,42 @@
+<div class="nav">
+  <div class="nav-inner">
+    
+    <!-- Language Dropdown Toggle (Left) -->
+    <button class="language-toggle" id="languageToggle" aria-label="Select language">
+      <i class="fas fa-globe"></i>
+    </button>
+
+    <a href="/">
+      <div class="site-date">
+        {{ site.time | date: "%B %d, %Y" }}
+      </div>
+    </a>
+    
+    <!-- Burger Toggle (Right) -->
+    <button class="burger" id="burgerToggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Language Dropdown Menu -->
+  <div class="language-menu" id="languageMenu">
+    <ul>
+      <li><a href="/">🇨🇦 English</a></li>
+      <li><a href="/de">🇩🇪 Deutsch</a></li>
+      <li><a href="/fr">🇫🇷 Français</a></li>
+      <!-- <li><a href="/jp">🇯🇵 日本語</a></li> -->
+      <li><a href="/ar">🇸🇦 عربي</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Fullscreen Main Navigation Menu -->
+<nav class="fullscreen-menu" id="mainMenu">
+  <ul id="mainMenuList">
+    <li><a href="/experience">{{ site.data[lang].nav.experience }}</a></li>
+    <li><a href="/projects">{{ site.data[lang].nav.projects }}</a></li>
+    <li><a href="/blog">{{ site.data[lang].nav.blog }}</a></li>
+    <li><a href="/contact">{{ site.data[lang].nav.contact }}</a></li>
+  </ul>
+</nav>

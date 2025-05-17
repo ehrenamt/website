@@ -1,0 +1,31 @@
+{% assign raw_lang = page.url | split: '/' | slice: 1, 1 | first | downcase %}
+{% assign lang = raw_lang %}
+{% unless lang == 'fr' or lang == 'de' %}
+  {% assign lang = 'en' %}
+{% endunless %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include header.html %}
+
+
+
+    <section class="content">
+        <div id="vertical-content">
+            <h1> {{ page.title }} </h1>
+            <div class="hline-grey"></div>
+            <div class="vertical-section">
+            {{ content }}
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>

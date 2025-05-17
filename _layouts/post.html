@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include header.html %}
+    <section class="content">
+        <div id="vertical-content">
+
+          <div>
+              <h1 class="large-title-content"> {{ page.title | default: "Untitled Post" }} 
+                  {% if page.subtitle %}
+                  <span class="page-subtitle">- {{ page.subtitle }}</span>
+                  {% endif %}
+              </h1>
+          </div>
+                  
+          {{ content }}
+      
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div id="photo-title-container">
+        <div class="avatar"
+        style="{% if site.data.en.home.introduction.avatar %}background-image: url('{{ site.data[lang].home.introduction.avatar }}');{% endif %}">
+        </div>
+        <h1 id="avatar-title">
+        {{ site.data[lang].home.introduction.title }}
+        <br>
+        {{ site.data[lang].home.introduction.subtitle }}
+        </h1>
+</div>

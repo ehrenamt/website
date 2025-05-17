@@ -1,0 +1,43 @@
+introduction: 
+    title: "アディ・フセイン (Hussein Adi)"
+    subtitle: "ソフトウェアエンジニア"
+    avatar: "/assets/images/image.png"
+
+projects:
+  - title: "Real-time Collaborative GIS Web Map"
+    url: "https://github.com/ehrenamt"
+    image: "/assets/images/project1.png"
+    description: "Description"
+    tech:
+      - "Java"
+      - "TypeScript"
+      - "Redis"
+
+  - title: "Geospatial Algorithms Library in C++"
+    image: "img"
+    description: "Another description"
+    tech:
+      - "C++"
+      - "CMake"
+      - "gtest"
+
+  - title: "Transformer-based Classification Network"
+    image: "/assets/images/project3.png"
+    description: "Another description"
+    tech:
+      - "TensorFlow"
+      - "Matplotlib"
+
+  - title: "Automated Airline Database & API"
+    image: "img"
+    description: "Another description"
+    tech:
+      - "PLpgSQL"
+      - "GraphQL"
+      - "Go"
+
+special: "View all work ➜"
+
+contact:
+  contact-header: "Contact"
+  contact-text: "The best way to contact me is message me on LinkedIn."

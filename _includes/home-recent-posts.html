@@ -1,0 +1,29 @@
+{% assign recent_posts = site.posts | slice: 0, 2 %}
+
+{% if recent_posts == 0 %}
+
+{% endif %}
+
+<div class="vertical-section">
+  <h1>Recent Posts</h1>
+  <div class="hline-grey"></div>
+
+  {% for post in recent_posts %}
+  <div class="project-card">
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <h2>{{ post.title }}
+            <span style="font-size: var(--tech-font-size-base);">
+              {{ post.date | date: "%Y-%m-%d" }}
+            </span>
+          </h2>
+        </a>
+      </li>
+  </div>
+  {% endfor %}
+  <a href="/posts">
+    <div class="lower-button">
+        {{ site.data[lang].home.special-posts }}
+        </div>
+        </a>
+</div> 

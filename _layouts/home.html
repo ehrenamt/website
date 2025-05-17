@@ -1,0 +1,30 @@
+{% assign raw_lang = page.url | split: '/' | slice: 1, 1 | first | downcase %}
+{% assign lang = raw_lang %}
+{% unless lang == 'fr' or lang == 'de' or lang == 'ar' or lang == 'jp' %}
+  {% assign lang = 'en' %}
+{% endunless %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include header.html %}
+
+    <section class="content">
+        <div id="vertical-content">
+            <div class="vertical-section">
+            {% include home-avatar.html %}
+            {{ content }}
+            </div>
+
+            {% include home-projects.html %}
+            {% include home-recent-posts.html %}
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+.card-blog-preview {
+    // border: 1px solid var(--clr-border-a0);
+    margin: 25px 0;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pagination-item-wrapper {
+    padding: 0;
+    width: 33%;
+    text-align: center;
+}
+
+.spacer-pagination-bottom {
+    height: 10vh;
+}
+
+li {
+    list-style: none;
+}
+
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
