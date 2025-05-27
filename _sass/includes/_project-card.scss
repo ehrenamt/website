@@ -1,0 +1,75 @@
+.project-card {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: var(--clr-surface-a0);
+	padding: 12px;
+	// TODO
+	// padding: 0 12px 0 0px;
+
+	border-radius: 10px;
+	border: 1px solid var(--clr-border-a0);
+	// overflow: hidden;
+	height: auto;
+	overflow: visible;
+	transition: 0.15s ease-in-out;
+}
+
+.project-card:hover {
+	filter: brightness(1.05);
+	transform: scale(1.01);
+	
+	.project-image {
+		filter: grayscale(0);
+	}
+}
+
+.project-title {
+	color: var(--clr-font-a0);
+	font-size: var(--fs-h2);
+	font-weight: bold;
+}
+
+.project-image {
+	width: 80px;
+	height: 80px;
+
+	background-color: var(--clr-border-a0);
+	border-radius: 10px;
+
+	// TODO
+	// border-radius: 16px 0 0 16px;
+
+	aspect-ratio: 1 / 1;
+	justify-self: center;
+	flex-shrink: 0;
+
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+
+	height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  align-self: stretch; 
+
+}
+
+.project-text {
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+	// height: 80px; // fallback
+	height: auto;
+	padding-left: 15px;
+	font-size: var(--fs-p);
+	flex: 1; 
+	overflow: visible;
+}
+
+
+.card-date {
+	font-size: var(--fs-tech-item);
+}

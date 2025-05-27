@@ -1,0 +1,22 @@
+/* Medium media query BEGIN */
+@media (min-width: 768px) {
+
+	:root {
+		--header-font-size-base: 22px;
+		--header-font-size-small: 18px;
+		--para-font-size-base: 16px;
+		--language-font-size-base: 14px;
+		--body-padding: 100px;
+	}
+
+	body {
+		padding-left: var(--body-padding);
+		padding-right: var(--body-padding);
+	}
+
+	.project-card {
+		display: flex;
+		flex-direction: row;
+	}
+}
+/* Medium media query END */

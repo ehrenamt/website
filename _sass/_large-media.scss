@@ -1,0 +1,46 @@
+/* Large devices, laptops, desktop monitors */
+@media (min-width: 992px) {
+
+	:root {
+		--fs-h1: 20px;
+		--fs-h2: 16px;
+		--fs-p: 14px;
+		/* Note that vw is not screen width, it is the width of the browser window */
+		--body-padding: clamp(175px, 27vw, 4000px);
+	}
+
+	body {
+		padding-left: var(--body-padding);
+		padding-right: var(--body-padding);
+	}
+
+	#vertical-content {
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
+
+	.avatar {
+		height: 100px;
+		width: 100px;
+	}
+
+	.project-image {
+		height: 100px;
+		width: 100px;
+		aspect-ratio: 1 / 1;
+
+		filter: grayscale(0.33);
+	}
+
+	.project-card {
+		padding: 16px;
+	}
+
+	.project-text {
+		height: 100px;
+	}
+
+	.show-on-large {
+		display: block;
+	}
+}
