@@ -1,11 +1,8 @@
-/* Medium media query BEGIN */
+
+/* Tablets */
 @media (min-width: 768px) {
 
 	:root {
-		--header-font-size-base: 22px;
-		--header-font-size-small: 18px;
-		--para-font-size-base: 16px;
-		--language-font-size-base: 14px;
 		--body-padding: 100px;
 	}
 
@@ -14,9 +11,41 @@
 		padding-right: var(--body-padding);
 	}
 
+	#work-section {
+		display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+  		grid-column-gap: 2rem;
+        grid-row-gap: 0rem;
+	}
+
 	.project-card {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		width: 100%;
+		height: 32rem;
+		border-radius: var(--border-radius-a0);
 	}
+
+	.project-image {
+		flex: 1;
+	}
+
+	.project-text {
+		flex: 1;
+		padding: 1rem 1rem 0.5rem 1rem;
+		overflow: hidden;
+
+		display: flex;
+		flex-direction: column; 
+		gap: 0.5rem;   
+	}
+
+	.project-title {
+		font-weight: bold;
+	}
+
+	.project-description {
+		font-size: var(--fs-project-desc);
+	}
+
 }
-/* Medium media query END */

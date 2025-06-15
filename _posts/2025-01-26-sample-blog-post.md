@@ -4,6 +4,7 @@ title: "Placeholder Post"
 date: 2025-05-17
 excerpt: "Nothing to see here - just testing layouts and rendering!"
 image: "/assets/images/project1.png"
+language: "en"
 ---
 
 {% if page.image %}

@@ -7,8 +7,8 @@ This website was designed and developed by myself, with the aid of open-source s
 
 # Font Awesome
 
-The footer icons at the bottom of the page are Font Awesome free icons.
+The menu icons at the top of this website, as well as the footer icons at the bottom of the page, are Font Awesome free icons.
 
 # Jekyll
 
-This site was built using the static site generator Jekyll, which is used under the MIT License.
+This site was built using the static site generator Jekyll, which is freely usable under the MIT License.

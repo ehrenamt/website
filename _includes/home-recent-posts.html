@@ -1,26 +1,36 @@
-{% assign recent_posts = site.posts | slice: 0, 2 %}
+{% assign filtered_posts = site.posts | where: "language", lang %}
+{% assign recent_posts = filtered_posts | slice: 0, 2 %}
 
-{% if recent_posts == 0 %}
-
-{% endif %}
-
-<div class="vertical-section">
+<div class="vertical-section" id="posts-container">
   <h1>Recent Posts</h1>
   <div class="hline-grey"></div>
 
-  {% for post in recent_posts %}
-  <div class="project-card">
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          <h2>{{ post.title }}
-            <span style="font-size: var(--tech-font-size-base);">
-              {{ post.date | date: "%Y-%m-%d" }}
-            </span>
-          </h2>
-        </a>
-      </li>
-  </div>
-  {% endfor %}
+  {% if recent_posts.size == 0 %}
+
+  <p style=" color: black;">No recent posts - see my blog for all posts.</p>
+
+  {% else %}
+
+    {% for post in recent_posts %}
+    <a href="{{ post.url | relative_url }}">
+      <div class="post-homecard">
+          <!-- <div class="post-homecard-image"
+          style="{% if post.image %}background-image: url('{{ post.image }}');{% endif %}">
+          </div> -->
+        <div class="post-homecard-text">
+              <h2 class="post-homecard-title">
+                {{ post.title }}
+                <span style="font-size: var(--tech-font-size-base);">
+                  {{ post.date | date: "%Y-%m-%d" }}
+                </span>
+              </h2>
+              <p class="show-on-large">{{ post.excerpt}}</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+  {% endif %}
   <a href="/posts">
     <div class="lower-button">
         {{ site.data[lang].home.special-posts }}

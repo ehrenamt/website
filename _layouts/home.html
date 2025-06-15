@@ -19,10 +19,16 @@
             <div class="vertical-section">
             {% include home-avatar.html %}
             {{ content }}
+
+            <a href="/contact">
+                <div class="lower-button">
+                    {{ site.data[lang].home.special-intro }}
+                </div>
+            </a>
             </div>
+            {% include home-recent-posts.html %}
 
             {% include home-projects.html %}
-            {% include home-recent-posts.html %}
         </div>
     </section>
     {% include footer.html %}

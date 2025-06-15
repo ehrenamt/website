@@ -2,9 +2,12 @@
 .language-toggle {
   background: none;
   border: none;
-  font-size: 1.8rem;
   color: var(--clr-icon-a2);
   cursor: pointer;
+}
+
+i.fas, i.fab {
+  font-size: 2rem;
 }
 
 /* Language Dropdown */
@@ -21,7 +24,7 @@
   z-index: 999;
 
   background-color: var(--clr-bg-a0);
-  color: var(--bg-1);
+  color: var(--clr-font-a0);
 }
 
 .language-menu ul {
@@ -46,11 +49,9 @@
 .burger {
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--clr-icon-a2);
   cursor: pointer;
-
-  outline: 1px dashed var(--clr-icon-a2);
 }
 
 /* Fullscreen Nav */
@@ -105,7 +106,8 @@ body.menu-open .fullscreen-menu {
 
 .site-date {
     text-align: center;
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     padding-top: 4px;
     flex: 1;
+    color: var(--clr-font-a1);
 }

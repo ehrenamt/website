@@ -1,0 +1,23 @@
+.post-card {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+	width: 100%;
+	background-color: var(--clr-surface-a0);
+
+	border-radius: var(--border-radius-a0);
+
+}
+
+
+.post-image {
+
+}
+
+
+.post-card-text {
+	padding: 1rem;
+}

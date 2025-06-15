@@ -2,21 +2,40 @@
 @media (min-width: 992px) {
 
 	:root {
-		--fs-h1: 20px;
-		--fs-h2: 16px;
-		--fs-p: 14px;
-		/* Note that vw is not screen width, it is the width of the browser window */
-		--body-padding: clamp(175px, 27vw, 4000px);
+		// font-size: 18px;
+		--introduction-header-font-size: 1.5rem;
+		--para-font-size-base: 0.95rem;
+		--language-font-size-base: 1rem;
+		--body-padding: clamp(150px, 27vw, 4000px);
+		--fs-project-desc: 0.9rem;
+
+		--card-header-font-size: 1.2rem;
 	}
 
 	body {
+		/* Note that vw is not screen width, it is the width of the browser window */
+		/* padding-left: calc(300px + 15vw);
+		padding-right: calc(300px + 15vw); */
+		/* padding-left: clamp(175px, 27vw, 4000px);
+		padding-right: clamp(175px, 27vw, 4000px); */
 		padding-left: var(--body-padding);
 		padding-right: var(--body-padding);
 	}
 
 	#vertical-content {
-		padding-top: 80px;
-		padding-bottom: 20px;
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
+
+	#work-section {
+		display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+  		grid-column-gap: 2.5rem;
+        grid-row-gap: 0rem;
+	}
+
+	.vertical-section {
+		padding: 0.5rem 0;
 	}
 
 	.avatar {
@@ -24,23 +43,41 @@
 		width: 100px;
 	}
 
-	.project-image {
-		height: 100px;
-		width: 100px;
-		aspect-ratio: 1 / 1;
-
-		filter: grayscale(0.33);
+	.project-card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 32rem;
+		border-radius: var(--border-radius-a0);
 	}
 
-	.project-card {
-		padding: 16px;
+	.project-image {
+		flex: 1;
 	}
 
 	.project-text {
-		height: 100px;
+		flex: 1;
+		padding: 1rem 1rem 0.5rem 1rem;
+		overflow: hidden;
+
+		display: flex;
+		flex-direction: column; 
+		gap: 0.5rem;   
+	}
+
+	.project-title {
+		font-weight: bold;
+	}
+
+	.project-description {
+		font-size: var(--fs-project-desc);
 	}
 
 	.show-on-large {
 		display: block;
+	}
+
+	.post-homecard {
+		margin: 1.5rem 0;
 	}
 }

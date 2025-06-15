@@ -1,0 +1,36 @@
+.post-homecard {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+	height: 100%;
+	width: 100%;
+	background-color: var(--clr-surface-a0);
+	border-radius: var(--border-radius-a0);
+}
+
+// Changes on large
+// .post-homecard-image {
+// 	min-width: 7rem;
+// 	width: auto;
+// 	background-size: cover;
+//   	background-position: center;
+//   	background-repeat: no-repeat;
+// 	flex-grow: 0;
+// 	flex-shrink: 0;
+// 	height: auto;
+// }
+
+.post-homecard-text {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	padding: 1rem;
+	flex-grow: 1;
+}
+
+.post-homecard-title {
+	font-weight: bold;
+}

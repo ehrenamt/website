@@ -3,30 +3,43 @@ introduction:
     subtitle: "Software Developer"
     avatar: "/assets/images/image.png"
 
+
+work-section-header: "Highlighted Projects"
 projects:
-  - title: "Real-time Collaborative GIS Web Map"
+  - title: "Collaborative GIS Web Map"
     url: "https://github.com/ehrenamt"
     image: "/assets/images/project1.png"
-    description: "Description"
+    description: "Session-based collaborative mapping software using Websockets."
     tech:
       - "Java"
       - "TypeScript"
       - "Redis"
 
-  - title: "Geospatial Algorithms Library in C++"
+  - title: "Geospatial Library in C++"
     image: "/assets/images/projectx.png"
-    description: "Another description"
+    description: "Implementing efficient GIS algorithms and data structures in C++20 "
     tech:
       - "C++"
       - "CMake"
-      - "gtest"
+      - "GoogleTest"
 
   - title: "Transformer-based Classification Network"
     image: "/assets/images/project3.png"
-    description: "Another description"
+    description: "Comparing CNNs and transformer models for signal classification."
     tech:
+      - "Python"
       - "TensorFlow"
-      - "Matplotlib"
+
+  - title: "Automated Airline Database & API"
+    image: "/assets/images/projectx.png"
+    description: "An automated, self-contained, and secure trip scheduling database and API. "
+    tech:
+      - "PLpgSQL"
+      - "GraphQL"
+      - "Go"
+
+
+special-intro: "Contact"
 
 special-projects: "View all work ➜"
 

@@ -1,14 +1,12 @@
 <!-- BEGIN PROJECT SECTION -->
 <div class="vertical-section">
   <h1>
-    {{ site.data[lang].home.work-section-header }}
+    {{ site.data[lang].home. }}
   </h1>
-  <div class="hline-grey"></div>
-  <div id="work-section">
+  <!-- <div class="hline-grey"></div> -->
   {% for project in site.data.[lang].home.projects %}
     {% include project-card.html project=project %}
   {% endfor %}
-  </div>
   <a href="/projects">
     <div class="lower-button">
     {{ site.data[lang].home.special-projects }}
